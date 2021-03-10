@@ -11,18 +11,17 @@ import LeagueDetails from './componant/LeagueDetails/LeagueDetails';
 function App() {
   return (
     <>
-    <Header></Header>
-
-    <Router>
-      <Switch>
-        <Route path='/league/:leagueId'>
-          <LeagueDetails></LeagueDetails>
-        </Route>
-        <Route exact path='/'>
-          <LeaguesList></LeaguesList>
-        </Route>
-      </Switch>
-    </Router>
+      <Router>
+        <Switch>
+          <Route path='/league/:leagueId'>
+            <LeagueDetails></LeagueDetails>
+          </Route>
+          <Route exact path='/'>
+            <Header></Header>
+            <LeaguesList></LeaguesList>
+          </Route>
+        </Switch>
+      </Router>
     </>
   );
 }

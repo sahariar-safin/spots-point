@@ -17,7 +17,7 @@ const LeagueDetails = () => {
             .then(data => setLeagueDetails(data.leagues[0]))
     }, [leagueId.leagueId])
 
-    const { strLeagueAlternate, dateFirstEvent, strCountry, strGender, strDescriptionEN } = leagueDetails;
+    const { strBanner, strLeagueAlternate, dateFirstEvent, strCountry, strGender, strDescriptionEN } = leagueDetails;
 
     let gender;
     if (strGender === 'Male') {
@@ -27,6 +27,9 @@ const LeagueDetails = () => {
     }
     return (
         <div className='league-details-container'>
+            <div className="league-banner">
+                <img src={strBanner} alt="" />
+            </div>
             <div className="league-details container">
                 <div className="row">
                     <div className="col-md-8 col-sm-12 col-xs-12">
@@ -47,9 +50,9 @@ const LeagueDetails = () => {
                 <p>{strDescriptionEN}</p>
             </div>
             <div className="social-icon container text-center">
-                <img src={Twitter} alt=""/>
-                <img src={Facebook} alt=""/>
-                <img src={Youtube} alt=""/>
+                <img src={Twitter} alt="" />
+                <img src={Facebook} alt="" />
+                <img src={Youtube} alt="" />
             </div>
         </div>
     );
