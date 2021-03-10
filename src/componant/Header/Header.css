@@ -1,0 +1,29 @@
+.header{
+    height: 300px;
+    width: 100%;
+    background-image: url('/src/andres-siimon-iOITF7T87kU-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.overflow{
+    height: 300px;
+    width: 100%;
+    content: '';
+    position: absolute;
+    background-color: rgba(29, 28, 28, 5);
+    text-align: center;
+    opacity: .6;
+}
+.title{
+    height: 300px;
+    width: 100%;
+    content: '';
+    position: absolute;
+    opacity: 1;
+    text-align: center;
+    color: white;
+    margin-top: 110px;
+    font-size: 50px;
+}

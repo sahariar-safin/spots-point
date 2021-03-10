@@ -1,0 +1,12 @@
+.league-card{
+    width: 400px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+.league-card img{
+    width: 100px;
+    height: 100px;
+}
