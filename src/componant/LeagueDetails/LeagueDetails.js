@@ -18,8 +18,7 @@ const LeagueDetails = () => {
     }, [leagueId.leagueId])
 
     const { strLeagueAlternate, dateFirstEvent, strCountry, strGender, strDescriptionEN } = leagueDetails;
-    console.log(leagueDetails);
-    console.log(strGender);
+
     let gender;
     if (strGender === 'Male') {
         gender = true;

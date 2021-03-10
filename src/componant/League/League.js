@@ -7,20 +7,21 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
 const League = (props) => {
+    const { idLeague, strLeague } = props.league;
     const [badge, setBadge] = useState();
 
     useEffect(() => {
-        fetch(`https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${ props.league.idLeague }`)
+        fetch(`https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${ idLeague }`)
             .then(res => res.json())
             .then(data => setBadge(data.leagues[0].strBadge))
-    }, [props.league.idLeague])
+    }, [idLeague])
 
     return (
         <div className='league-card'>
             <img src={badge} alt="" />
-            <h3 className='m-3'>{props.league.strLeague}</h3>
+            <h3 className='m-3'>{strLeague}</h3>
             <h5 className='m-3'>Sports type: Football</h5>
-            <Link to={'/league/'+ props.league.idLeague}>
+            <Link to={'/league/' + idLeague}>
                 <button className='btn btn-success'>Explore <FontAwesomeIcon icon={faArrowRight} /></button>
             </Link>
         </div>
