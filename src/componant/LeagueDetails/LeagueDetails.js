@@ -3,6 +3,9 @@ import { useParams } from 'react-router';
 import './LeagueDetails.css';
 import Male from '../../image/male.png';
 import Female from '../../image/female.png';
+import Twitter from '../../Icon/Twitter.png';
+import Facebook from '../../Icon/Facebook.png';
+import Youtube from '../../Icon/YouTube.png';
 
 const LeagueDetails = () => {
     const leagueId = useParams();
@@ -43,6 +46,11 @@ const LeagueDetails = () => {
             </div>
             <div className="league-description container">
                 <p>{strDescriptionEN}</p>
+            </div>
+            <div className="social-icon container text-center">
+                <img src={Twitter} alt=""/>
+                <img src={Facebook} alt=""/>
+                <img src={Youtube} alt=""/>
             </div>
         </div>
     );

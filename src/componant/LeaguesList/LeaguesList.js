@@ -11,7 +11,7 @@ const LeaguesList = () => {
         const url = 'https://www.thesportsdb.com/api/v1/json/1/all_leagues.php';
         fetch(url)
             .then(res => res.json())
-            .then(data => setLeague(data.leagues.slice(0, 10)))
+            .then(data => setLeague(data.leagues.slice(0, 12)))
     }, []);
     return (
         <div className="leagues-list">

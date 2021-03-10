@@ -5,10 +5,10 @@ const Header = () => {
     return (
         <div className='header'>
             <div className="overflow">
-                
+
             </div>
             <div className='title'>
-                <h1>Team tester</h1>
+                <h1>Sports Point</h1>
             </div>
         </div>
     );
