@@ -21,9 +21,12 @@
     width: 50px;
 }
 .league-banner{
-    height: 300px;
     width: 90%;
     padding: 0;
     margin: 0 auto;
     text-align: center;
+}
+.league-banner img{
+    width: 100%;
+    margin: 5px;
 }

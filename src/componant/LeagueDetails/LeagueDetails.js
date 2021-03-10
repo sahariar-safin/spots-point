@@ -6,6 +6,7 @@ import Female from '../../image/female.png';
 import Twitter from '../../Icon/Twitter.png';
 import Facebook from '../../Icon/Facebook.png';
 import Youtube from '../../Icon/YouTube.png';
+import Header from '../Header/Header';
 
 const LeagueDetails = () => {
     const leagueId = useParams();
@@ -27,9 +28,6 @@ const LeagueDetails = () => {
     }
     return (
         <div className='league-details-container'>
-            <div className="league-banner">
-                <img src={strBanner} alt="" />
-            </div>
             <div className="league-details container">
                 <div className="row">
                     <div className="col-md-8 col-sm-12 col-xs-12">
